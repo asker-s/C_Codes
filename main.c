@@ -21,11 +21,11 @@ if((red = scanf(" %c [ %Lf ; %Lf ] , [ %Lf ; %Lf ] , [ %Lf ; %Lf ] }%c",&b,&arr[
 		return 0;
 	}
 
-	sx=double(arr[1][1]-arr[0][1])/double(arr[1][0]-arr[0][0]);
+	sx=(double)(arr[1][1]-arr[0][1])/(double)(arr[1][0]-arr[0][0]);
 
-	sy=double(arr[1][1]-arr[2][1])/double(arr[1][0]-arr[2][0]);
+	sy=(double)(arr[1][1]-arr[2][1])/(double)(arr[1][0]-arr[2][0]);
 
-	sz=double(arr[0][1]-arr[2][1])/double(arr[0][0]-arr[2][0]);
+	sz=(double)(arr[0][1]-arr[2][1])/(double)(arr[0][0]-arr[2][0]);
 
 	x=sqrt((arr[0][0]-arr[1][0])*(arr[0][0]-arr[1][0])+(arr[0][1]-arr[1][1])*(arr[0][1]-arr[1][1]));
 
@@ -37,7 +37,7 @@ if((red = scanf(" %c [ %Lf ; %Lf ] , [ %Lf ; %Lf ] , [ %Lf ; %Lf ] }%c",&b,&arr[
 	sy=floor(10000000*sy)/10000000;
 	sz=floor(10000000*sz)/10000000;
 
-	bir=double(x+y+z);
+	bir=(double)(x+y+z);
 
 	if (fabs(sx-sy)<1e-12 && fabs(sy-sz)<1e-12)
 	{
@@ -52,7 +52,7 @@ else if((red = scanf(" %Lf , %Lf , %Lf }%c",&x,&y,&z,&r))==4)
       printf("Invalid input.\n");
       return 0;
     }
-  bir=double(x+y+z);
+  bir=(double)(x+y+z);
 }
 else{
 	printf("Invalid input.\n" );
@@ -77,11 +77,11 @@ printf("Triangle #2:\n");
 			return 0;
 	}
 
-	sx1=double(arr[4][1]-arr[3][1])/double(arr[4][0]-arr[3][0]);
+	sx1=(double)(arr[4][1]-arr[3][1])/(double)(arr[4][0]-arr[3][0]);
 
-	sy1=double(arr[5][1]-arr[4][1])/double(arr[5][0]-arr[4][0]);
+	sy1=(double)(arr[5][1]-arr[4][1])/(double)(arr[5][0]-arr[4][0]);
 
-	sz1=double(arr[3][1]-arr[5][1])/double(arr[3][0]-arr[5][0]);
+	sz1=(double)(arr[3][1]-arr[5][1])/(double)(arr[3][0]-arr[5][0]);
 
 	x1=sqrt((arr[3][0]-arr[4][0])*(arr[3][0]-arr[4][0])+(arr[3][1]-arr[4][1])*(arr[3][1]-arr[4][1]));
 
@@ -95,7 +95,7 @@ printf("Triangle #2:\n");
 
 	sz1=floor(10000*sz1)/10000;
 
-	iki=double(x1+y1+z1);
+	iki=(double)(x1+y1+z1);
 
 	if (sx1==sy1 && sy1==sz1)
 	{
@@ -110,7 +110,7 @@ else if((red = scanf(" %Lf , %Lf , %Lf }%c",&x1,&y1,&z1,&r))==4)
 		printf("Invalid input.\n");
 		return 0;
 	}
-	iki=double(x1+y1+z1);
+	iki=(double)(x1+y1+z1);
 }
 else{
 	printf("Invalid input.\n" );
